@@ -1,7 +1,7 @@
 import React from 'react';
 import WebcamStream from './webcam';
 const App = () => {
-  const videoURL = " http://192.168.1.18:5000/video_feed"; // replace with server IP or domain
+  const videoURL = " https://912a-2401-4900-1cc4-366a-59ab-af2f-20b0-8d85.ngrok-free.app/video_feed"; // replace with server IP or domain
   // const videoURL = "https://flask-nr63.onrender.com"; // replace with server IP or domain
 
 
