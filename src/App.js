@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
+  const videoURL = "http://192.168.1.18:5000/video_feed"; // replace with server IP or domain
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-4 text-center">
+      <h1 className="text-2xl font-bold mb-4">Live Webcam Feed</h1>
+      <img src={videoURL} alt="Webcam Stream" className="mx-auto border-4 border-orange-300" />
     </div>
   );
-}
+};
 
 export default App;
